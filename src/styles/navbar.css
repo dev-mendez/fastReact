@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #08a086;
+}
+
+.navbar-nav {
+}
+
+#img_logo {
+  margin-right: 1.5em;
+}
+
+.font-weight-light,
+.font-weight-bold {
+  font-size: large;
+  color: wheat;
+  font-size: 1.4em;
+}
+
+#link_logo {
+  text-decoration: none;
+
+}

@@ -1,0 +1,85 @@
+.card_container {
+  position: relative;
+  margin-top: 2em;
+  margin-left: -6em !important;
+}
+.tecno_img {
+  width: 100px;
+}
+
+#usser_abatar {
+  width: 120px;
+  height: 140px;
+  margin-left: -1em;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: rgba(170, 50, 50, 0.973) !important;
+  width: 400px;
+}
+#logo_prof_container {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 0px !important;
+}
+.card-header {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 0px !important;
+}
+.usser_info {
+  background-color: rgba(223, 223, 223, 0);
+  display: flex;
+}
+
+#jobT {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  color: rgb(240, 201, 26);
+  background-color: #3d8633a2;
+}
+h2#jobTitle {
+  font-size: 2.5em;
+}
+
+#name_container {
+  display: flex;
+  align-items: center;
+}
+#name {
+  margin-left: 1em;
+  color: wheat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#prof_container {
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+#prof_title {
+  margin-top: 0.5em;
+  list-style-type: none;
+  font-size: xx-large;
+  color: rgb(245, 229, 159);
+}
+ul#prof {
+  list-style-type: square;
+  font-size: 1.3em;
+  color: rgb(245, 229, 159);
+}
+
+.justify-content-centered {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(240, 201, 26);
+  
+}
+#email_span{
+    
+}
