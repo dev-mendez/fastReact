@@ -11,13 +11,15 @@ class App extends React.Component {
         <Navbar />
         <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col-6">
               <Badge
                 jobTitle="Full-Stack Engineer"
                 firstName="Armando"
                 lastName="Mendez"
                 email="an2m001@gmail.com"
               />
+            </div>
+            <div className="col-lg-4">
               <Myform />
             </div>
           </div>
