@@ -1,18 +1,23 @@
 import React from "react";
 
 class MyForm extends React.Component {
-  handleChange = (e) => {
-    console.log({
-      name: e.target.name,
-      value: e.target.value,
-    });
-  };
-  hendleClick = (e) => {
+  //   state = {
+  //     fullName: "Armando",
+  //   };
+
+  //   handleChange = (e) => {
+  //     this.setState({
+  //       [e.target.name]: e.target.value,
+  //     });
+  //   };
+
+  handleClick = (e) => {
     console.log("Button was clicked");
   };
-  hendleSubmit = (e) => {
+
+  handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form was submited");
+    console.log(this.state);
   };
   render() {
     return (
@@ -20,17 +25,42 @@ class MyForm extends React.Component {
         <h1>New Attendant</h1>
 
         <form action="" onSubmit={this.hendleSubmit} className="form-group">
-          <label>Firs Name</label>
+          <label>Full Name</label>
           <input
-            onChange={this.handleChange}
+            onChange={this.props.onChange}
             className="form-control"
             type="text"
-            name="firstName"
+            name="fullName"
+            value={this.props.formValues.fullName}
+          ></input>
+          <label>Abatar-URL</label>
+          <input
+            onChange={this.props.onChange}
+            className="form-control"
+            type="url"
+            name="url"
+            value={this.props.formValues.url}
+          ></input>
+          <label>Profession</label>
+          <input
+            onChange={this.props.onChange}
+            className="form-control"
+            type="text"
+            name="profession"
+            value={this.props.formValues.profession}
+          ></input>
+          <label>Email</label>
+          <input
+            onChange={this.props.onChange}
+            className="form-control"
+            name="email"
+            type="email"
+            value={this.props.formValues.email}
           ></input>
           <button
             type="submit"
-            onClick={this.hendleClick}
-            className="btn btn-primary"
+            onClick={this.handleClick}
+            className="btn btn-primary btn-fluid"
           >
             Save
           </button>

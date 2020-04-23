@@ -5,6 +5,23 @@ import Badge from "./badge";
 import Myform from "./form";
 
 class App extends React.Component {
+  state = {
+    form: {
+      fullName: "",
+      url: "",
+      profession: "",
+      email: "",
+    },
+  };
+
+  handleChange = (e) => {
+    this.setState({
+      form: {
+        ...this.state.form,
+        [e.target.name]: e.target.value,
+      },
+    });
+  };
   render() {
     return (
       <div>
@@ -13,14 +30,17 @@ class App extends React.Component {
           <div className="row">
             <div className="col-6">
               <Badge
-                jobTitle="Full-Stack Engineer"
-                firstName="Armando"
-                lastName="Mendez"
-                email="an2m001@gmail.com"
+                firstName={this.state.form.fullName}
+                jobTitle={this.state.form.profession}
+                lastName={""}
+                email={this.state.form.email}
               />
             </div>
             <div className="col-lg-4">
-              <Myform />
+              <Myform
+                onChange={this.handleChange}
+                formValues={this.state.form}
+              />
             </div>
           </div>
         </div>
