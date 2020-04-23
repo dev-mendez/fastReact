@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/app.css";
-import Navbar from "./navbar";
-import Badge from "./badge";
-import Myform from "./form";
+import Navbar from "../components/navbar";
+import Badge from "../components/badge";
+import Myform from "../components/BadgesNew";
 
 class App extends React.Component {
   state = {
@@ -36,7 +36,7 @@ class App extends React.Component {
                 email={this.state.form.email}
               />
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-3 col-sm-3">
               <Myform
                 onChange={this.handleChange}
                 formValues={this.state.form}

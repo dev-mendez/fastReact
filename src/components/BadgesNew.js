@@ -1,16 +1,6 @@
 import React from "react";
 
 class MyForm extends React.Component {
-  //   state = {
-  //     fullName: "Armando",
-  //   };
-
-  //   handleChange = (e) => {
-  //     this.setState({
-  //       [e.target.name]: e.target.value,
-  //     });
-  //   };
-
   handleClick = (e) => {
     console.log("Button was clicked");
   };
@@ -60,7 +50,7 @@ class MyForm extends React.Component {
           <button
             type="submit"
             onClick={this.handleClick}
-            className="btn btn-primary btn-fluid"
+            className="btn btn-success btn-block"
           >
             Save
           </button>
