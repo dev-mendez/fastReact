@@ -6,6 +6,28 @@ import usserLogo from "../images/self.png";
 import "../styles/badge.css";
 
 class Badge extends React.Component {
+  state = {
+    data: [
+      {
+        fullName: "Arian Wakamayo",
+        jobTitle: "FrontEnd Engineer",
+        email: "arian@gmail.com",
+        usserLogo: "#",
+      },
+      {
+        fullName: "Diesel Sparragus",
+        jobTitle: "BackEnd Specialist",
+        email: "Diesel3322d@gmail.com",
+        usserLogo: "#",
+      },
+      {
+        fullName: "Matilda CuchiCuchi",
+        jobTitle: "Full Stack Developer",
+        email: "mati@gmail.com",
+        usserLogo: "#",
+      },
+    ],
+  };
   render() {
     return (
       <div className="container card_container ">
